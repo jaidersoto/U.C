@@ -19,9 +19,8 @@ def print_matrix(matrix):
         print(row)
 
 # Ejemplo de uso
-input_data = [0b11111111, 0b00000010, 0b00000100, 0b00001000, 0b00010000, 0b00100000, 0b01000000, 0b10000000]
-print("Entrada:")
-print_matrix([[int(digit) for digit in bin(byte)[2:].zfill(8)] for byte in input_data])  # Entrada en forma de matriz
+input_data = [3, 4, 7, 22, 0b00010000, 0b00100000, 0b01000000, 0b10000000]
+
 
 xbm_output = convert_to_xbm(input_data)
 
